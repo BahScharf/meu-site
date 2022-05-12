@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudoclasses</title>
+    <style>
+        a:hover {
+            background-color: yellow;
+        }
+    </style> 
+    <style>
+        p::before {
+            content: " Leia isso - ";
+        }
+
+        p::after {
+            content: " - Leia mais";
+        }
+    </style>
+    <style>
+        p::first-letter {
+            font-size: 200%;
+            color: #8A2BE2;
+        }
+    </style>
+    
+    <style>
+        p:first-child {
+            color: blue;
+        }
+    </style>
+    <style>
+        .mylist li:first-child {
+            background: greenyellow;
+        }
+        .mylist li:nth-child(3) {
+            background: grey;
+        }
+        .mylist li:last-child {
+            background: yellow;
+        }
+    </style>
+    <style>
+        p::first-line {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://ios.org.br/">IOS</a>
+    <a href="https://www.wikipedia.org">wikipedia.org</a>
+
+        <h1>Bem-Vindo</h1>
+
+    <p>Meu nome é Donald</p>
+    <p>Eu moro em in Ducksburgs</p>
+    <p>Meu Melhor amigo é o Mickey</p>
+
+    <h1>IOS</h1>
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolores vero consectetur ea rem similique quas sint error tempore</P>
+
+    <p><strong>Nota:</strong> A Pseudoclasses: houve aplica o estilo quando o mouse passa por cima do elemento.</p>
+
+    <section>
+        <p>Primeiro elemento &lt;p&gt; Filho do elemento &lt;section&gt;. </section></p>
+        <p>Parágrafo qualquer.</p>
+    </section>
+    <section>
+        <p>Lista não ordenada colorida</p>
+        <ul class="mylist">
+            <li>Primeiro filho</li>
+            <li>Segundo filho</li>
+            <li>Terceiro filho</li>
+            <li>Quarto filho</li>
+            <li>Ùltimo filho</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Primeiro elemento &lt;p&gt; filho do elemento &lt;footer&gt;</p>
+        <p>Parágrafo qualquer</p>
+    </footer>
+</body>
+</html>
